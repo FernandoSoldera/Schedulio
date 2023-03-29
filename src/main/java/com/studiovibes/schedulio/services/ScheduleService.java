@@ -26,15 +26,13 @@ public class ScheduleService extends BasicService {
         return scheduleRepository.findAll(pageable);
     }
 
-    public Optional<Object> findById(UUID id) {
-        return Optional.of(scheduleRepository.findById(id));
-    }
+    public Optional<Schedule> findById(UUID id) { return scheduleRepository.findById(id); }
 
     public boolean ifExistById(UUID id) {
         return scheduleRepository.existsById(id);
     }
 
-    public void deleteRoom(UUID id) {
+    public void deleteSchedule(UUID id) {
         scheduleRepository.deleteById(id);
     }
 }

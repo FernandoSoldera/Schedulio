@@ -15,7 +15,7 @@ public class ScheduleDto {
     private UUID room_id;
     private List<UUID> equipment;
     @NotBlank
-    private LocalDateTime scheduleDate;
+    private String scheduleDate;
 
     public UUID getStudio_id() {
         return studio_id;
@@ -41,11 +41,11 @@ public class ScheduleDto {
         this.equipment = equipment;
     }
 
-    public LocalDateTime getScheduleDate() {
+    public String getScheduleDate() {
         return scheduleDate;
     }
 
-    public void setScheduleDate(LocalDateTime scheduleDate) {
+    public void setScheduleDate(String scheduleDate) {
         this.scheduleDate = scheduleDate;
     }
 }

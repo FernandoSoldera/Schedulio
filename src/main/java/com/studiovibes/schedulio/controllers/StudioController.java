@@ -1,7 +1,6 @@
 package com.studiovibes.schedulio.controllers;
 
 import com.studiovibes.schedulio.dtos.StudioDto;
-import com.studiovibes.schedulio.dtos.UserDto;
 import com.studiovibes.schedulio.models.Studio;
 import com.studiovibes.schedulio.models.User;
 import com.studiovibes.schedulio.services.StudioService;
